@@ -49,8 +49,7 @@ width: 100%;
 #infoHolder{
     margin-left: 5vw;
     margin-top: 55vh;
-    z-index: 1000;
-    width: 50%;
+    z-index: 1000; 
     position: absolute;
     font-size: 22px;
     font-style: bold;
@@ -69,7 +68,7 @@ width: 100%;
     width: 50px;
 height: 50px;
 }
-`
+
  
 .contactPage{
     height: 100vh; 
