@@ -1,25 +1,21 @@
 
 $(document).ready(function () {
-    $("#project,#about,#contact").addClass("d-none");
-    $("a").click(function () {
+  var slidedabout;
+
+  slidedabout = $(".about2").slideUp(1);
+    $("#btnhome,#btnProject").click(function () {
         var id = $(this).attr("id");
-        if (id == "btnprojects") {
-            $("#home,#about,#contact").addClass("d-none");
-            $("#project").removeClass("d-none");
+        if (id == "btnhome") {
+         
+            $(".about").slideDown(500);
+            $(".about2").slideUp(600); 
+        
+            
         }
-        if (id == "btnabout") {
-            $("#home,#project,#contact").addClass("d-none");
-            $("#about").removeClass("d-none");
-        }
-        if (id == "btncontact") {
-            $("#home,#about,#project").addClass("d-none");
-            $("#contact").removeClass("d-none");
+        if (id == "btnProject") {
+            $(".about").slideUp(500); 
+            $(".about2").slideDown(500);
         }
 
-
-    });
-    $("#btnhome").click(function(){
-        $("#contact,#about,#project").addClass("d-none");
-        $("#home").removeClass("d-none");
     });
 });
