@@ -10,7 +10,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <script src="app.js?ver=1"></script>
+    <script  >
+        
+$(document).ready(function () {
+  var slidedabout;
+
+  slidedabout = $(".about2").slideUp(1);
+    $("#btnhome,#btnProject").click(function () {
+        var id = $(this).attr("id");
+        if (id == "btnhome") {
+         
+            $(".about").slideDown(500);
+            $(".about2").slideUp(600); 
+        
+            
+        }
+        if (id == "btnProject") {
+            $(".about").slideUp(500); 
+            $(".about2").slideDown(500);
+        }
+
+    });
+});
+    </script>
  <style>
      body{
   background-color: #535d66;
