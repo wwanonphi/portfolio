@@ -17,17 +17,20 @@ $(document).ready(function () {
 
   slidedabout = $(".about2").slideUp(1);
     $("#btnhome,#btnProject").click(function () {
+        $("#btnhospital").click(function(){
+            window.location.assign("projects/hospital/index.html");
+        });
         var id = $(this).attr("id");
         if (id == "btnhome") {
          
-            $(".about").slideDown(500);
-            $(".about2").slideUp(600); 
+            $(".about").slideDown(200);
+            $(".about2").slideUp(1000); 
         
             
         }
         if (id == "btnProject") {
-            $(".about").slideUp(500); 
-            $(".about2").slideDown(500);
+            $(".about").slideUp(200); 
+            $(".about2").slideDown(1000);
         }
 
     });
@@ -147,6 +150,18 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                        </div>
                    </div>
 
+                   <div class="card  text-dark btn" id="btnhospital">
+                    <div class="card-header">
+                     <h4>Hospital Asset and Information Management</h4>
+                    </div>
+                    <div class="card-body">
+                   <p class="lead"> Mock up design and sample to provide overview of my design skills.
+                       A System that can be use to utilize proper record management, Asset Management, 
+                       Inventry and Vehicle monitoring.
+                   </p>  
+                    </div>
+                </div>
+                
                 
                </div>
           </div>
